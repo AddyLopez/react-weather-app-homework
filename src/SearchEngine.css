@@ -1,0 +1,41 @@
+.SearchEngine div {
+  background-color: lightblue;
+  border: 6px dashed salmon;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 20px auto;
+  padding: 10px;
+  width: 365px;
+}
+
+.SearchEngine input {
+  background-color: lightpink;
+  border-radius: 6px;
+  font-family: monospace;
+  letter-spacing: 1px;
+  margin: 0 4px;
+  padding: 12px;
+}
+
+.SearchEngine input.submit {
+  background-color: thistle;
+}
+.SearchEngine h2 {
+  font-size: 20px;
+}
+
+.SearchEngine ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.SearchEngine li {
+  font-size: 18px;
+}
+
+.SearchEngine span {
+  text-transform: capitalize;
+}
