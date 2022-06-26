@@ -63,6 +63,19 @@ export default function SearchEngine() {
         <input type="submit" value="Search" className="submit" />
       </form>
       {message}
+      <footer>
+        <p>
+          <a
+            href="https://github.com/AddyLopez/shecodesreact-weather-app-homework"
+            title="To GitHub repository"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open-source code
+          </a>{" "}
+          by Addy López
+        </p>
+      </footer>
     </div>
   );
 }
