@@ -39,3 +39,27 @@
 .SearchEngine span {
   text-transform: capitalize;
 }
+
+.SearchEngine footer {
+  margin-top: 17px;
+}
+.SearchEngine p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  margin: 5px 0 0 0;
+}
+
+.SearchEngine a {
+  color: #0056ff;
+  text-decoration: none;
+}
+.SearchEngine a:visited {
+  color: #0056ff;
+}
+.SearchEngine a:hover {
+  text-decoration: underline;
+}
+.SearchEngine a:active {
+  font-weight: bold;
+}

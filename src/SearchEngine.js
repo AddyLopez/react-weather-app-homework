@@ -75,6 +75,16 @@ export default function SearchEngine() {
           </a>{" "}
           by Addy López
         </p>
+        <p>
+          <a
+            href="https://openweathermap.org/accuracy-and-quality"
+            title="Learn about accuracy of data from OpenWeather"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Data from OpenWeather
+          </a>{" "}
+        </p>
       </footer>
     </div>
   );
