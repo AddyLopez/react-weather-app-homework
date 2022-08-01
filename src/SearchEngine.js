@@ -9,16 +9,23 @@ export default function SearchEngine() {
 
   function displayWeather(response) {
     console.log(response.data);
+
     setMessage(
       <div>
         <h2>Current weather in {city}:</h2>
         <ul>
-          <li>Temperature: {Math.round(response.data.main.temp)}°F</li>
+          <li>
+            Temperature: {Math.round(response.data.main.temp)}°F |{" "}
+            {Math.round((response.data.main.temp - 32) * (5 / 9))}°C
+          </li>
           <li>
             Description: <span>{response.data.weather[0].description}</span>
           </li>
           <li>Humidity: {response.data.main.humidity}%</li>
-          <li>Wind: {Math.round(response.data.wind.speed)} mph</li>
+          <li>
+            Wind: {Math.round(response.data.wind.speed)}mph |{" "}
+            {Math.round(response.data.wind.speed * 1.609)}km/h
+          </li>
           <li>
             <img
               src={`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`}
@@ -83,7 +90,7 @@ export default function SearchEngine() {
             rel="noreferrer"
           >
             Data from OpenWeather
-          </a>{" "}
+          </a>
         </p>
       </footer>
     </div>
